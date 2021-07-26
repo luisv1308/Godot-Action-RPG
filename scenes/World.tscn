@@ -1,10 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://world/Bush.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/Overworld_Tileset.png" type="Texture" id=3]
 [ext_resource path="res://scenes/Grass.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=5]
+[ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/Tree.tscn" type="PackedScene" id=7]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Overworld_Tileset.png 0"
@@ -610,6 +612,8 @@
 42/shapes = [  ]
 42/z_index = 0
 
+[sub_resource type="AnimationNodeStateMachinePlayback" id=2]
+
 [node name="World" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -624,6 +628,9 @@ tile_data = PoolIntArray( 0, 18, 0, 1, 21, 0, 2, 21, 0, 3, 21, 0, 4, 21, 0, 5, 2
 
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 23, 59 )
+
+[node name="AnimationTree" parent="YSort/Player" index="3"]
+parameters/playback = SubResource( 2 )
 
 [node name="Bushes" type="YSort" parent="YSort"]
 
@@ -680,11 +687,19 @@ position = Vector2( 160, 48 )
 [node name="Grass5" parent="YSort/Grass" instance=ExtResource( 4 )]
 position = Vector2( 160, 96 )
 
+[node name="Trees" type="YSort" parent="YSort"]
+
+[node name="Tree" parent="YSort/Trees" instance=ExtResource( 7 )]
+position = Vector2( 224, 48 )
+
+[node name="Tree2" parent="YSort/Trees" instance=ExtResource( 7 )]
+position = Vector2( 32, 144 )
+
 [node name="Bat" parent="YSort" instance=ExtResource( 5 )]
 position = Vector2( 80, 64 )
 
 [node name="AnimatedSprite" parent="YSort/Bat" index="0"]
-frame = 4
+frame = 0
 
 [node name="Stats" parent="YSort/Bat" index="4"]
 max_healt = 4
@@ -693,17 +708,29 @@ max_healt = 4
 position = Vector2( 108, 111 )
 
 [node name="AnimatedSprite" parent="YSort/Bat2" index="0"]
-frame = 4
+frame = 0
 
 [node name="Bat3" parent="YSort" instance=ExtResource( 5 )]
 position = Vector2( 180, 77 )
 
 [node name="AnimatedSprite" parent="YSort/Bat3" index="0"]
-frame = 4
+frame = 0
 
 [node name="Stats" parent="YSort/Bat3" index="4"]
 max_healt = 7
 
+[node name="HealthUI" parent="." instance=ExtResource( 6 )]
+
+[editable path="YSort/Player"]
+[editable path="YSort/Player/HitboxPivot/SwordHitbox"]
+[editable path="YSort/Player/Hurtbox"]
 [editable path="YSort/Bat"]
+[editable path="YSort/Bat/PlayerDetectionZone"]
+[editable path="YSort/Bat/Hitbox"]
 [editable path="YSort/Bat2"]
+[editable path="YSort/Bat2/PlayerDetectionZone"]
+[editable path="YSort/Bat2/Hitbox"]
 [editable path="YSort/Bat3"]
+[editable path="YSort/Bat3/PlayerDetectionZone"]
+[editable path="YSort/Bat3/Hitbox"]
+[editable path="HealthUI"]
