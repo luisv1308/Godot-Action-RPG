@@ -699,7 +699,7 @@ position = Vector2( 32, 144 )
 position = Vector2( 80, 64 )
 
 [node name="AnimatedSprite" parent="YSort/Bat" index="0"]
-frame = 0
+frame = 3
 
 [node name="Stats" parent="YSort/Bat" index="4"]
 max_healt = 4
@@ -708,13 +708,13 @@ max_healt = 4
 position = Vector2( 108, 111 )
 
 [node name="AnimatedSprite" parent="YSort/Bat2" index="0"]
-frame = 0
+frame = 3
 
 [node name="Bat3" parent="YSort" instance=ExtResource( 5 )]
 position = Vector2( 180, 77 )
 
 [node name="AnimatedSprite" parent="YSort/Bat3" index="0"]
-frame = 0
+frame = 3
 
 [node name="Stats" parent="YSort/Bat3" index="4"]
 max_healt = 7
