@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_copter(loop).wav-6ce1abfb3a73f2f160718ec2a2b8c7da.sample"
+
+[deps]
+
+source_file="res://assets/Sounds/Cyberleaf-RetroSFX/Various/SFX_copter(loop).wav"
+dest_files=[ "res://.import/SFX_copter(loop).wav-6ce1abfb3a73f2f160718ec2a2b8c7da.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

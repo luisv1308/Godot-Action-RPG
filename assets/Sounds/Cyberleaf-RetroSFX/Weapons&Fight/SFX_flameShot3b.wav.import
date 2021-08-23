@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_flameShot3b.wav-7625512436823419851e8e7ced428b7d.sample"
+
+[deps]
+
+source_file="res://assets/Sounds/Cyberleaf-RetroSFX/Weapons&Fight/SFX_flameShot3b.wav"
+dest_files=[ "res://.import/SFX_flameShot3b.wav-7625512436823419851e8e7ced428b7d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

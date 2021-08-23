@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_collect&bonus3.wav-074cc9fa24b5e88cf522629cc249cc49.sample"
+
+[deps]
+
+source_file="res://assets/Sounds/Cyberleaf-RetroSFX/GameEvents/SFX_collect&bonus3.wav"
+dest_files=[ "res://.import/SFX_collect&bonus3.wav-074cc9fa24b5e88cf522629cc249cc49.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

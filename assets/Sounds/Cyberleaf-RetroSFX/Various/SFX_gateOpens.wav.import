@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_gateOpens.wav-6819d6eaf7d9d275f87b81ef0086d1cb.sample"
+
+[deps]
+
+source_file="res://assets/Sounds/Cyberleaf-RetroSFX/Various/SFX_gateOpens.wav"
+dest_files=[ "res://.import/SFX_gateOpens.wav-6819d6eaf7d9d275f87b81ef0086d1cb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

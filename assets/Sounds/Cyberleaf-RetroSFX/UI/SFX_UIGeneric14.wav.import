@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_UIGeneric14.wav-8553a51309fc8bc3402e1c12dfc5e149.sample"
+
+[deps]
+
+source_file="res://assets/Sounds/Cyberleaf-RetroSFX/UI/SFX_UIGeneric14.wav"
+dest_files=[ "res://.import/SFX_UIGeneric14.wav-8553a51309fc8bc3402e1c12dfc5e149.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
